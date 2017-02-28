@@ -28,5 +28,17 @@
 
 @media screen and (max-width: 375px)  {
 img {
+  display: none;}
+.fullscreen-bg__video {
   display: none;
+
 }}
+
+.fullscreen-bg__video {
+      height: 1200px;
+      float: left;
+    }
+
+p {
+  text-align: justify;
+}
