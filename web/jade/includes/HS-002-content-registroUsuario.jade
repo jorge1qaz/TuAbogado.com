@@ -1,0 +1,21 @@
+.container
+    .row
+        form.col.offset-s2.s8
+            .row
+                .input-field.col.s6
+                    input#first_name.validate(type='text')
+                    label(for='first_name') Nombre(s)
+                .input-field.col.s6
+                    input#last_name.validate(type='text')
+                    label(for='last_name') Apellidos
+            .row
+                .input-field.col.s12
+                    input#email.validate(type='email')
+                    label(for='email') Correo electrónico
+            .row
+                .input-field.col.s6
+                    input#password.validate(type='password')
+                    label(for='password') Contraseña
+                .input-field.col.s6
+                    input#password.validate(type='password')
+                    label(for='password') Confirmar contraseña

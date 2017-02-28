@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8"/>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta name="keywords" content="legal,procesos legales, como proceder, demanda, abogados, peru,huancayo"/>
+  <meta name="description" content="¿Tiene una situación Jurídica por Resolver? Consultas Jurídicas Online Gratis con Abogados Especialistas en todas las áreas del Derecho."/>
+  <meta name="author" content="AbogadosYa"/>
+  <link href="../styles/materialize.css" rel="stylesheet"/>
+  <link href="../styles/icons.css" rel="stylesheet"/>
+  <script src="../js/bin/jquery.js"></script>
+  <script src="../js/bin/materialize.min.js"></script>
+  <script src="../js/sideNav.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/forms.js"></script>
+</html>
+<body>
+  <nav>
+    <div class="nav-wrapper light-blue lighten-1"><a class="brand-logo center" href="../images/Logo.png">TuAbogado.com</a><a class="button-collapse" href="#" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-green" href="#">Registre su despacho</a></li>
+        <li><a class="waves-effect waves-green" href="#">Contactar un abogado</a></li>
+        <li><a class="waves-effect waves-green" href="./HS-001-login.html">Iniciar Sesión</a></li>
+        <li><a class="waves-effect waves-green" href="#"> </a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-menu">
+        <li><a class="waves-effect waves-green" href="#">Registre su despacho</a></li>
+        <li><a class="waves-effect waves-green" href="#">Contactar un abogado</a></li>
+        <li><a class="waves-effect waves-green" href="./HS-001-login.html">Iniciar Sesión</a></li>
+        <li><a class="waves-effect waves-green" href="#"> </a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="fixed-action-btn"><a class="btn-floating btn-large red" href="./home.html"><i class="large material-icons">live_help</i></a></div><br/><br/>
+  <div class="modal" id="modal1">
+    <div class="modal-content light-blue lighten-1">
+      <h4 class="center">Sistema Experto de Consultas</h4>
+      <div class="row">
+        <div class="col m3 s12"><img class="responsive" src="../images/ibrother-popup.png" alt="Persona amigable"/></div>
+        <div class="col m9 s12">
+          <div class="row">
+            <div class="col m12 s12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-title">¿Necesita ayuda?</div>
+                  <form id="contenido">
+                    <p>Usted sólo necesita responder algunas preguntas muy sencillas, de esta forma sabremos cúal es su problema y le presentaremos la solucióm que usted necesita.</p><br/><a class="btn waves-effect waves-light indigo darken-4 right" href="./HS-003-SistemaExperto.html" id="se">Aceptar<i class="material-icons right">send</i></a><br/>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><a class="modal-action modal-close waves-effect waves-green btn-flat" href="#">Cerrar</a></div>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $('.modal').modal();
+        $('#modal1').modal('open');
+        /*if($('#modal1').modal('close') = true) 
+        {
+            alert("cerrado");
+        }*/
+    });
+  </script>
+  <script src="../js/generalidades.js"></script>
+</body>

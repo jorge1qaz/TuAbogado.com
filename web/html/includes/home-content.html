@@ -1,0 +1,39 @@
+
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <h4 class="center">Sistema Experto de Consultas</h4>
+    <div class="row">
+      <div class="col m3 s12"><img class="responsive" src="../images/ibrother-popup.png" alt="Persona amigable"/></div>
+      <div class="col m9 s12">
+        <div class="row">
+          <div class="col m12 s12">
+            <div class="card light-blue lighten-1">
+              <div class="card-content white-text">
+                <div class="card-title">Necesita ayuda? Déjeme ayudarle</div>
+                <form id="contenido">
+                  <p>Usted sólo necesita responder algunas preguntas muy sencillas, de esta forma sabremos cúal es su problema y le presentaremos la solucióm que usted necesita.</p>
+                  <li>
+                    <button class="btn waves-effect waves-light indigo darken-4 right" name="action" id="se">Enviar<i class="material-icons right">send</i></button><br/>
+                  </li>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer"><a class="modal-action modal-close waves-effect waves-green btn-flat" href="#">Cerrar</a></div>
+</div>
+<script>
+  $(document).ready(function(){
+      $('.modal').modal();
+      $('#modal1').modal('open');
+      /*if($('#modal1').modal('close') = true) 
+      {
+          alert("cerrado");
+      }*/
+  });
+  
+</script>
+<script src="../js/se.js"></script>

@@ -1,0 +1,143 @@
+.container
+    .row
+        .col.m9
+            .row
+            
+                .card.light-blue.lighten-1
+                    .card-content.white-text
+                        .card-title ¿Ha sufrido algún tipo de agresión?
+                        form
+                            ul
+                                li
+                                    input(type="checkbox")#answer1a
+                                    label.white-text(for="answer1a") Si
+                                li
+                                    input(type="checkbox")#answer2a
+                                    label.white-text(for="answer2a") No
+                                li
+                                    input(type="checkbox")#answer3a
+                                    label.white-text(for="answer3a") No estoy seguro
+                                
+                    button#NextQuestion.btn.waves-effect.waves-light.indigo.darken-4.left Aceptar
+                        i.material-icons.right send
+                                br
+            .row#question2
+                
+                    .card.light-blue.lighten-1
+                        .card-content.white-text
+                            .card-title ¿Qué relación tiene Ud. con el agresor?
+                            form
+                                ul
+                                    li
+                                        input(type="checkbox")#answer1b
+                                        label.white-text(for="answer1b") Es un familiar
+                                    li
+                                        input(type="checkbox")#answer2b
+                                        label.white-text(for="answer2b") Es mi jefe
+                                    li
+                                        input(type="checkbox")#answer3b
+                                        label.white-text(for="answer3b") Es un compañero de trabajo
+                                    li
+                                        input(type="checkbox")#answer4b
+                                        label.white-text(for="answer4b") Es sólo un conocido
+                                    
+                        button#NextQuestion2.btn.waves-effect.waves-light.indigo.darken-4.left Aceptar
+                            i.material-icons.right send
+                                    br
+
+            .row#question3
+                
+                    .card.light-blue.lighten-1
+                        .card-content.white-text
+                            .card-title ¿Cómo fue la agresión que recibió?
+                            form
+                                ul
+                                    li
+                                        input(type="checkbox")#answer1c
+                                        label.white-text(for="answer1c") Psicológica: gritos, amenazas, etc
+                                    li
+                                        input(type="checkbox")#answer2c
+                                        label.white-text(for="answer2c") Física: Moretones, golpes, fracturas, etc
+                                    li
+                                        input(type="checkbox")#answer3c
+                                        label.white-text(for="answer3c") Ambas
+
+                        button#NextQuestion3.btn.waves-effect.waves-light.indigo.darken-4.left Aceptar
+                            i.material-icons.right send
+                                    br                            
+            .row#question4
+                
+                    .card.light-blue.lighten-1
+                        .card-content.white-text
+                            .card-title ¿El agresor(a) es su pareja conyugal?
+                            form
+                                ul
+                                    li
+                                        input(type="checkbox")#answer1d
+                                        label.white-text(for="answer1d") Si, es mi esposo o esposa
+                                    li
+                                        input(type="checkbox")#answer2d
+                                        label.white-text(for="answer2d") No, es otro miembro de mi familia
+                                    li
+                                        input(type="checkbox")#answer3d
+                                        label.white-text(for="answer3d") En realidad es sólo una persona cercana a mi familia
+
+                        button#NextQuestion4.btn.waves-effect.waves-light.indigo.darken-4.left Aceptar
+                            i.material-icons.right send
+                                    br     
+            .row#question5
+                
+                    .card.light-blue.lighten-1
+                        .card-content.white-text
+                            .card-title ¿Cúantas veces le pasó éste lamentable suceso?
+                            form
+                                ul
+                                    li
+                                        input(type="checkbox")#answer1d
+                                        label.white-text(for="answer1d") Es la primera vez
+                                    li
+                                        input(type="checkbox")#answer2d
+                                        label.white-text(for="answer2d") Muy pocas veces
+                                    li
+                                        input(type="checkbox")#answer3d
+                                        label.white-text(for="answer3d") pocas veces
+                                    li
+                                        input(type="checkbox")#answer4d
+                                        label.white-text(for="answer4d") Reiteradas veces
+                                    li
+                        a(href="#confirmarResultado").btn.waves-effect.waves-light.indigo.darken-4.left Aceptar
+                            i.material-icons.right send
+                                    br 
+        
+        .col.m3
+            img(src="../images/brothercito-right.png", alt="Confirmar resultado").responsive
+
+
+    #confirmarResultado.modal
+        .modal-content.green.lighten-1
+            h4.center Resultado
+            .row
+                .col.m3
+                    img(src="../images/brothercito-centro.png", alt="Confirmar resultado").responsive
+                
+                .col.m9
+                    .card.white
+                        .card-content
+                            .card-title Su problema es:
+                            form#contenido
+                                h4.black-text VIOLENCIA FAMILIAR
+                                p.center Sepa que hacer para solucionar su problema, cuáles son sus derechos, que entidad debe visitar para realizar sus trámites y mucho más! 
+                                p.center TuAbogado.com te ofrece solucionar tu problema de la forma más fácil eficiente y confiable.
+                                .center
+                                    em.purple-text Compre este caso sólo por:  
+                                    span  S/ 1.00 
+                                        a
+                                            i.material-icons credit_card
+                                br
+
+                                a(href="./HS-004-ResultadoSE.html")#se.btn.waves-effect.waves-light.indigo.darken-4.right Comprar
+                                    i.material-icons.right shopping_cart
+                                br
+        .modal-footer
+            a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#') Cerrar
+    script(src="../js/se.js")

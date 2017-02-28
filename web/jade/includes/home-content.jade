@@ -1,0 +1,29 @@
+#modal1.modal
+    .modal-content.light-blue.lighten-1
+        h4.center Sistema Experto de Consultas
+        .row
+            .col.m3.s12
+                img(src="../images/ibrother-popup.png", alt="Persona amigable").responsive
+            .col.m9.s12
+                .row
+                    .col.m12.s12
+                        .card
+                            .card-content
+                                .card-title ¿Necesita ayuda?
+                                form#contenido
+                                    p Usted sólo necesita responder algunas preguntas muy sencillas, de esta forma sabremos cúal es su problema y le presentaremos la solucióm que usted necesita.
+                                    br
+                                    a(href="./HS-003-SistemaExperto.html")#se.btn.waves-effect.waves-light.indigo.darken-4.right Aceptar
+                                        i.material-icons.right send
+                                    br
+    .modal-footer
+        a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#') Cerrar
+script.
+    $(document).ready(function(){
+        $('.modal').modal();
+        $('#modal1').modal('open');
+        /*if($('#modal1').modal('close') = true) 
+        {
+            alert("cerrado");
+        }*/
+    });

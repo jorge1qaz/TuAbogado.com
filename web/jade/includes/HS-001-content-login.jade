@@ -1,0 +1,29 @@
+
+#modal1.modal
+    .modal-content
+        h4 Iniciar sesión 
+        .row
+            form.col.s12
+                .row
+                    .input-field.col.s12
+                        input.validate(type='text')
+                        label(for='Usuario') Usuario
+                    .input-field.col.s12
+                        input.validate(type='password')
+                        label(for='password') Contraseña
+                    button(name="action")#se.btn.waves-effect.waves-light.indigo.darken-4.right Enviar
+        .row
+            .col.s12.center
+                a(href="./HS-002-registroUsuario.html").blue-text.text-darken-2 Crear cuenta
+                hr
+                a(href="#").blue-text.text-darken-2 Olvidó su Contraseña?
+
+script.
+    $(document).ready(function(){
+        $('.modal').modal();
+        $('#modal1').modal('open');
+        /*if($('#modal1').modal('close') = true) 
+        {
+            alert("cerrado");
+        }*/
+    });

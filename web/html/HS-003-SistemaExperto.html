@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8"/>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta name="keywords" content="legal,procesos legales, como proceder, demanda, abogados, peru,huancayo"/>
+  <meta name="description" content="¿Tiene una situación Jurídica por Resolver? Consultas Jurídicas Online Gratis con Abogados Especialistas en todas las áreas del Derecho."/>
+  <meta name="author" content="AbogadosYa"/>
+  <link href="../styles/materialize.css" rel="stylesheet"/>
+  <link href="../styles/icons.css" rel="stylesheet"/>
+  <script src="../js/bin/jquery.js"></script>
+  <script src="../js/bin/materialize.min.js"></script>
+  <script src="../js/sideNav.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/forms.js"></script>
+</html>
+<body>
+  <nav>
+    <div class="nav-wrapper light-blue lighten-1"><a class="brand-logo center" href="../images/Logo.png">TuAbogado.com</a><a class="button-collapse" href="#" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-green" href="#">Registre su despacho</a></li>
+        <li><a class="waves-effect waves-green" href="#">Contactar un abogado</a></li>
+        <li><a class="waves-effect waves-green" href="./HS-001-login.html">Iniciar Sesión</a></li>
+        <li><a class="waves-effect waves-green" href="#"> </a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-menu">
+        <li><a class="waves-effect waves-green" href="#">Registre su despacho</a></li>
+        <li><a class="waves-effect waves-green" href="#">Contactar un abogado</a></li>
+        <li><a class="waves-effect waves-green" href="./HS-001-login.html">Iniciar Sesión</a></li>
+        <li><a class="waves-effect waves-green" href="#"> </a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="fixed-action-btn"><a class="btn-floating btn-large red" href="./home.html"><i class="large material-icons">live_help</i></a></div><br/><br/>
+  <div class="container">
+    <div class="row">
+      <div class="col m9">
+        <div class="row">
+          <div class="card light-blue lighten-1">
+            <div class="card-content white-text">
+              <div class="card-title">¿Ha sufrido algún tipo de agresión?</div>
+              <form>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="answer1a"/>
+                    <label class="white-text" for="answer1a">Si</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer2a"/>
+                    <label class="white-text" for="answer2a">No</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer3a"/>
+                    <label class="white-text" for="answer3a">No estoy seguro</label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <button class="btn waves-effect waves-light indigo darken-4 left" id="NextQuestion">Aceptar<i class="material-icons right">send<br/></i></button>
+          </div>
+        </div>
+        <div class="row" id="question2">
+          <div class="card light-blue lighten-1">
+            <div class="card-content white-text">
+              <div class="card-title">¿Qué relación tiene Ud. con el agresor?</div>
+              <form>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="answer1b"/>
+                    <label class="white-text" for="answer1b">Es un familiar</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer2b"/>
+                    <label class="white-text" for="answer2b">Es mi jefe</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer3b"/>
+                    <label class="white-text" for="answer3b">Es un compañero de trabajo</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer4b"/>
+                    <label class="white-text" for="answer4b">Es sólo un conocido</label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <button class="btn waves-effect waves-light indigo darken-4 left" id="NextQuestion2">Aceptar<i class="material-icons right">send<br/></i></button>
+          </div>
+        </div>
+        <div class="row" id="question3">
+          <div class="card light-blue lighten-1">
+            <div class="card-content white-text">
+              <div class="card-title">¿Cómo fue la agresión que recibió?</div>
+              <form>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="answer1c"/>
+                    <label class="white-text" for="answer1c">Psicológica: gritos, amenazas, etc</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer2c"/>
+                    <label class="white-text" for="answer2c">Física: Moretones, golpes, fracturas, etc</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer3c"/>
+                    <label class="white-text" for="answer3c">Ambas</label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <button class="btn waves-effect waves-light indigo darken-4 left" id="NextQuestion3">Aceptar<i class="material-icons right">send<br/></i></button>
+          </div>
+        </div>
+        <div class="row" id="question4">
+          <div class="card light-blue lighten-1">
+            <div class="card-content white-text">
+              <div class="card-title">¿El agresor(a) es su pareja conyugal?</div>
+              <form>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="answer1d"/>
+                    <label class="white-text" for="answer1d">Si, es mi esposo o esposa</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer2d"/>
+                    <label class="white-text" for="answer2d">No, es otro miembro de mi familia</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer3d"/>
+                    <label class="white-text" for="answer3d">En realidad es sólo una persona cercana a mi familia</label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <button class="btn waves-effect waves-light indigo darken-4 left" id="NextQuestion4">Aceptar<i class="material-icons right">send<br/></i></button>
+          </div>
+        </div>
+        <div class="row" id="question5">
+          <div class="card light-blue lighten-1">
+            <div class="card-content white-text">
+              <div class="card-title">¿Cúantas veces le pasó éste lamentable suceso?</div>
+              <form>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="answer1d"/>
+                    <label class="white-text" for="answer1d">Es la primera vez</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer2d"/>
+                    <label class="white-text" for="answer2d">Muy pocas veces</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer3d"/>
+                    <label class="white-text" for="answer3d">pocas veces</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="answer4d"/>
+                    <label class="white-text" for="answer4d">Reiteradas veces</label>
+                  </li>
+                  <li></li>
+                </ul>
+              </form>
+            </div><a class="btn waves-effect waves-light indigo darken-4 left" href="#confirmarResultado">Aceptar<i class="material-icons right">send<br/></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col m3"><img class="responsive" src="../images/brothercito-right.png" alt="Confirmar resultado"/></div>
+    </div>
+    <div class="modal" id="confirmarResultado">
+      <div class="modal-content green lighten-1">
+        <h4 class="center">Resultado</h4>
+        <div class="row">
+          <div class="col m3"><img class="responsive" src="../images/brothercito-centro.png" alt="Confirmar resultado"/></div>
+          <div class="col m9">
+            <div class="card white">
+              <div class="card-content">
+                <div class="card-title">Su problema es:</div>
+                <form id="contenido">
+                  <h4 class="black-text">VIOLENCIA FAMILIAR</h4>
+                  <p class="center">Sepa que hacer para solucionar su problema, cuáles son sus derechos, que entidad debe visitar para realizar sus trámites y mucho más! </p>
+                  <p class="center">TuAbogado.com te ofrece solucionar tu problema de la forma más fácil eficiente y confiable.</p>
+                  <div class="center"><em class="purple-text">Compre este caso sólo por:  </em><span> S/ 1.00 <a><i class="material-icons">credit_card</i></a></span></div><br/><a class="btn waves-effect waves-light indigo darken-4 right" href="./HS-004-ResultadoSE.html" id="se">Comprar<i class="material-icons right">shopping_cart</i></a><br/>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer"><a class="modal-action modal-close waves-effect waves-green btn-flat" href="#">Cerrar</a></div>
+    </div>
+    <script src="../js/se.js"></script>
+  </div>
+  <script src="../js/generalidades.js"></script>
+</body>
