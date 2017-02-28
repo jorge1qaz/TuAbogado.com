@@ -10,31 +10,109 @@
             .col.s12.m4
                 
                     h2.center.brown-text
-                        i.material-icons.large flash_on
-                    h5.center Speeds up joder
+                        i.material-icons.large question_answer
+                    h5.center ¿No tiene idea de cúal es su problema?
                     p.light
-                        | We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+                        | En TuAbogado.com sólo necita sólo necesita responder algunas preguntas muy sencillas, de esta forma sabremos cúal es su problema y le presentaremos la solución que usted necesita.
+            .col.s12.m4
+                
+                    h2.center.brown-text
+                        i.material-icons.large settings_applications
+                    h5.center Sistema experto de Consultas
+                    p.light
+                        | Gracias a la base de conocimiento implementado por los mejores abogados del pais, podemos analizar sus respuestas y llegar a sabe cúal es su problema.
+                        p.purple-text.center !Al igual que si hablara con un abogado en persona!
             .col.s12.m4
                 
                     h2.center.brown-text
                         i.material-icons.large group
-                    h5.center User Experience Focused
+                    h5.center Consulte a un abogado
                     p.light
-                        | By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.
-            .col.s12.m4
-                
-                    h2.center.brown-text
-                        i.material-icons.large settings
-                    h5.center Easy to work with
-                    p.light
-                        | We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.
-
+                        | Usted tambien cuenta con los mejores abogados a su disposición, sólo dirijase a la pestaña de "Contactar a un abogado".
+                        | En esta sección podrá contactar directamente con el abogado, al finalizar la consulta usted podrá calificar la consulta
+                        | o también poner comentarios, de esta forma mejorar el servicio ofrecido.
 .parallax-container
     .parallax
         img(src="../images/portada2.jpg", alt="")
+.container.center    
+    .section
+        .row
+            h4.center.indigo-text Temas de interes
+        .row
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Derecho Civil
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Derecho Penal
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Derecho Laboral
+        .row
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Familia Civil
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Familia Tutelar
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Derecho Constitucional
+        .row
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Trámite Rehabilitación
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Trámite Homonimias
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Trámite Viajes al Extranjero
+        .row
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Certificados Antecedentes Penales
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Trámite Garantías Personales
+            .col.s12.m4
+                .card-panel.blue-grey.darken-1
+                    card-content.white-text
+                        span.card-tittle Temas Varios
+
+            
+
 .parallax-container
     .parallax
         img(src="../images/portada3.jpg", alt="")
+.container    
+    .section
+        .row
+            h4.center.indigo-text Foro de Consultas
+        .row
+            .col.offset-m3.m6.s12
+                .carousel.carousel-slider
+                    a(href="#one!").carousel-item
+                        img(src="../images/portada1.jpg", alt="")
+                    a(href="#two!").carousel-item
+                        img(src="../images/portada2.jpg", alt="")
+                    a(href="#three!").carousel-item
+                        img(src="../images/portada3.jpg", alt="")
+        .row
+            .col.offset-m3.m6.s12
+                p.purple-text ¿Aún tienes dudas? Descuida el foro de consultas te permite hacer preguntas a toda la comunidad de TuAbogado.com
+
             
 #modal1.modal
     .modal-content.light-blue.lighten-1
@@ -61,4 +139,14 @@ script.
         $('.modal').modal();
         $('#modal1').modal('open');
         $('.parallax').parallax();
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $('.card-panel.blue-grey.darken-1').mouseenter(function() {
+            $(this).removeClass("blue-grey darken-1");
+            $(this).addClass("indigo");
+
+        });
+        $('.card-panel.blue-grey.darken-1').mouseleave(function() {
+            $(this).removeClass("indigo");
+            $(this).addClass("blue-grey darken-1");
+        });
     });

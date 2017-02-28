@@ -42,3 +42,19 @@ img {
 p {
   text-align: justify;
 }
+
+.Fakebody {
+  height: 1500px;
+  width: 1500px;
+  background: white;
+}
+
+.abogados {
+  min-height: 155px;
+  max-height: 155px;
+}
+
+.abogadoContenedor {
+  min-height: 345px;
+  max-height: 345px;
+}
