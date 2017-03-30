@@ -1,0 +1,69 @@
+.container
+    .row
+        nav.teal.lighten-2
+            .nav-wrapper
+                .col.s12
+                    a.breadcrumb(href='home.html')
+                        i.material-icons dashboard
+                    a.breadcrumb(href='HS-005-ListaDeAbogados.html') Abogados
+                    a.breadcrumb(href='#!') Detalle de abogado
+
+    .row
+        .col.s12.m6
+            .card
+                .card-image
+                    img(src="../images/abogado4.jpg", alt="").circle.responsive-img.materialboxed
+                    strong.card-title Carlos Casas
+            .row
+                .card
+                    .card-panel.grey.lighten-5.z-depth-1
+                        span.card-title Comentarios
+                        .row.valign-wrapper
+                            .col.s2
+                                img(src='../images/usuarios/jorge.jpg', alt='').circle.responsive-img
+                            .col.s10
+                                strong.black-text
+                                    | Jorge Luis Ricra Alcántara
+                                br
+                                span
+                                    | Excelente guía! muy buen abogado!
+                                br
+                                span.cyan-text Puntos: 9
+                                    time.right 12/02/2017 
+
+
+                        .row.valign-wrapper
+                            .col.s2
+                                img(src='../images/usuarios/luna.jpg', alt='').circle.responsive-img
+                            .col.s10
+                                strong.black-text
+                                    | Luna Dika Valerio
+                                br
+                                span
+                                    | Es un abogado realmente inteligente, lo recomiendo mil veces.
+                                br
+                                span.cyan-text Puntos: 8
+                                    time.right 12/02/2017                            
+                        .row.valign-wrapper
+                            .col.s2
+                                img(src='../images/usuarios/shirley.jpg', alt='').circle.responsive-img
+                            .col.s10
+                                strong.black-text
+                                    | Shirley Patricia Cosme Pucuhuaranga
+                                br
+                                span
+                                    | Me agradó su trato, es muy amable y supo darte la orientación que realmente necesitaba.
+                                br
+                                span.cyan-text Puntos: 1
+                                    time.right 27/03/2017
+                        
+                        a(href="#").blue-text Ver todos los comentarios
+        .col.s12.m6
+            .collection
+                a.collection-item
+                    span.badge 8.8
+                    | Puntuación
+
+
+script.
+    $('.materialboxed').materialbox();

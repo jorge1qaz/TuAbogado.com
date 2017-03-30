@@ -1,454 +1,93 @@
 .container
     .row
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado2.jpg", alt="").abogados
-                    span.card-title Carlos Casas
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.8
-                    .row
-                        p.indigo-text.center A 31 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado4.jpg", alt="").abogados
-                    span.card-title Fabian Larco
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 17:09 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.4
-                    .row
-                        p.indigo-text.center A sólo 12 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado5.jpg", alt="").abogados
-                    span.card-title Marleny Soto
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.1
-                    .row
-                        p.indigo-text.center A sólo 10 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado1.jpg", alt="").abogados
-                    span.card-title Luis Reyes
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 15:33 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 7.8
-                    .row
-                        p.indigo-text.center A 17 km de ti
+        nav.teal.lighten-2
+            .nav-wrapper
+                .col.s12
+                    a.breadcrumb(href='home.html')
+                        i.material-icons dashboard
+                    a.breadcrumb(href='HS-005-ListaDeAbogados.html') Abogados
     .row
         .col.s12.m3
             .card.abogadoContenedor
                 .card-image
-                    img(src="../images/abogado2.jpg", alt="").abogados
+                    img(src="../images/abogado4.jpg", alt="").abogados.responsive-img.materialboxed
                     span.card-title Carlos Casas
                     a.btn-floating.halfway-fab.waves-effect.waves-light.green
                         i.material-icons call
                 .card-content
                     .row
                         .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
                             em.blue-text.center Puntuación
                             br
                             p.red-text.center 8.8
+                        .col.m6.s6
+                            p.green-text En línea
                     .row
                         p.indigo-text.center A 31 km de ti
+                    .row.center
+                        a.btn.waves-effect.waves-light.blue.white-text(href="HS-006-DetalleAbogado.html") Detalles
+                    
         .col.s12.m3
             .card.abogadoContenedor
                 .card-image
-                    img(src="../images/abogado4.jpg", alt="").abogados
+                    img(src="../images/abogado2.jpg", alt="").abogados.responsive-img.materialboxed
                     span.card-title Fabian Larco
                     a.btn-floating.halfway-fab.waves-effect.waves-light.green
                         i.material-icons call
                 .card-content
                     .row
                         .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 17:09 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
                             em.blue-text.center Puntuación
                             br
                             p.red-text.center 8.4
+                        .col.m6.s6
+                            marquee(scrollAmount = "3")
+                                p.black-text Ult. vez hoy a las 17:09 horas
                     .row
                         p.indigo-text.center A sólo 12 km de ti
+                    .row.center
+                        a.btn.waves-effect.waves-light.blue.white-text(href="HS-006-DetalleAbogado.html") Detalles
+                    
         .col.s12.m3
             .card.abogadoContenedor
                 .card-image
-                    img(src="../images/abogado5.jpg", alt="").abogados
+                    img(src="../images/abogado5.jpg", alt="").abogados.responsive-img.materialboxed
                     span.card-title Marleny Soto
                     a.btn-floating.halfway-fab.waves-effect.waves-light.green
                         i.material-icons call
                 .card-content
                     .row
                         .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
                             em.blue-text.center Puntuación
                             br
                             p.red-text.center 8.1
+                        .col.m6.s6
+                            p.green-text En línea
                     .row
                         p.indigo-text.center A sólo 10 km de ti
+                    .row.center
+                        a.btn.waves-effect.waves-light.blue.white-text(href="HS-006-DetalleAbogado.html") Detalles
+                    
         .col.s12.m3
             .card.abogadoContenedor
                 .card-image
-                    img(src="../images/abogado1.jpg", alt="").abogados
+                    img(src="../images/abogado1.jpg", alt="").abogados.responsive-img.materialboxed
                     span.card-title Luis Reyes
                     a.btn-floating.halfway-fab.waves-effect.waves-light.green
                         i.material-icons call
                 .card-content
                     .row
                         .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 15:33 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
                             em.blue-text.center Puntuación
                             br
                             p.red-text.center 7.8
-                    .row
-                        p.indigo-text.center A 17 km de ti
-    .row
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado2.jpg", alt="").abogados
-                    span.card-title Carlos Casas
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.8
-                    .row
-                        p.indigo-text.center A 31 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado4.jpg", alt="").abogados
-                    span.card-title Fabian Larco
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 17:09 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.4
-                    .row
-                        p.indigo-text.center A sólo 12 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado5.jpg", alt="").abogados
-                    span.card-title Marleny Soto
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.1
-                    .row
-                        p.indigo-text.center A sólo 10 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado1.jpg", alt="").abogados
-                    span.card-title Luis Reyes
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
                         .col.m6.s6
                             marquee(scrollAmount = "3")
                                 p.black-text Ult. vez hoy a las 15:33 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 7.8
                     .row
-                        p.indigo-text.center A 17 km de ti
-    .row
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado2.jpg", alt="").abogados
-                    span.card-title Carlos Casas
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.8
-                    .row
-                        p.indigo-text.center A 31 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado4.jpg", alt="").abogados
-                    span.card-title Fabian Larco
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 17:09 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.4
-                    .row
-                        p.indigo-text.center A sólo 12 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado5.jpg", alt="").abogados
-                    span.card-title Marleny Soto
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.1
-                    .row
-                        p.indigo-text.center A sólo 10 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado1.jpg", alt="").abogados
-                    span.card-title Luis Reyes
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 15:33 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 7.8
-                    .row
-                        p.indigo-text.center A 17 km de ti
-    .row
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado2.jpg", alt="").abogados
-                    span.card-title Carlos Casas
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.8
-                    .row
-                        p.indigo-text.center A 31 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado4.jpg", alt="").abogados
-                    span.card-title Fabian Larco
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 17:09 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.4
-                    .row
-                        p.indigo-text.center A sólo 12 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado5.jpg", alt="").abogados
-                    span.card-title Marleny Soto
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.1
-                    .row
-                        p.indigo-text.center A sólo 10 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado1.jpg", alt="").abogados
-                    span.card-title Luis Reyes
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 15:33 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 7.8
-                    .row
-                        p.indigo-text.center A 17 km de ti
-    .row
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado2.jpg", alt="").abogados
-                    span.card-title Carlos Casas
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.8
-                    .row
-                        p.indigo-text.center A 31 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado4.jpg", alt="").abogados
-                    span.card-title Fabian Larco
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 17:09 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.4
-                    .row
-                        p.indigo-text.center A sólo 12 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado5.jpg", alt="").abogados
-                    span.card-title Marleny Soto
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            p.green-text En línea
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 8.1
-                    .row
-                        p.indigo-text.center A sólo 10 km de ti
-        .col.s12.m3
-            .card.abogadoContenedor
-                .card-image
-                    img(src="../images/abogado1.jpg", alt="").abogados
-                    span.card-title Luis Reyes
-                    a.btn-floating.halfway-fab.waves-effect.waves-light.green
-                        i.material-icons call
-                .card-content
-                    .row
-                        .col.m6.s6
-                            marquee(scrollAmount = "3")
-                                p.black-text Ult. vez hoy a las 15:33 horas
-                            button.waves-effect.waves-light.blue.white-text Detalles
-                        .col.m6.s6
-                            em.blue-text.center Puntuación
-                            br
-                            p.red-text.center 7.8
-                    .row
-                        p.indigo-text.center A 17 km de ti
+                        p.indigo-text.center A sólo 7 km de ti
+                    .row.center
+                        a.btn.waves-effect.waves-light.blue.white-text(href="HS-006-DetalleAbogado.html") Detalles
 
 #modal1.modal
     .modal-content.light-blue.lighten-1
@@ -475,4 +114,13 @@ script.
     $("a.btn-floating.halfway-fab.waves-effect.waves-light.green").click(function(){
         $('.modal').modal();
         $('#modal1').modal('open');
+
     });
+
+    $("img").click(function() {
+        $(this).removeClass("abogados");
+        $('.materialboxed').materialbox();
+        
+    });
+    //$("img").addClass("abogados");
+
