@@ -61,3 +61,8 @@ p {
 .call {
   top: 180px;
 }
+
+.text-justify {
+  text-align: justify importan!;
+  text-justify: inter-word;
+}

@@ -1,3 +1,9 @@
+style.
+    #map { height: 450px; width: 100%;}
+
+a.btn.btn-floating.pulse
+    i.material-icons menu
+
 .container
     .row
         nav.teal.lighten-2
@@ -54,7 +60,7 @@
                                 span
                                     | Me agradó su trato, es muy amable y supo darte la orientación que realmente necesitaba.
                                 br
-                                span.cyan-text Puntos: 1
+                                span.cyan-text Puntos: 10
                                     time.right 27/03/2017
                         
                         a(href="#").blue-text Ver todos los comentarios
@@ -64,6 +70,58 @@
                     span.badge 8.8
                     | Puntuación
 
+            .row
+                    ul(data-collapsible='accordion').collapsible
+                        li.active
+                            .collapsible-header.active
+                                i.material-icons info_outline
+                                | Resumen
+                            .collapsible-body
+                                span.text-justify Abogado tenaz y con sólida formación jurídica que jamás da un caso por perdido. Especialista en capitulaciones matrimoniales, derecho civil y demandas de indemnización por neglicencias médicas. Nacido en una familia de cuatro generaciones de abogados, mi máxima satisfacción profesional sería trabajar en una firma con tanto prestigio como Bufete Sánchez y Sánchez.
+                        li
+                            .collapsible-header
+                                i.material-icons info
+                                | Capacitaciones
+                            .collapsible-body    
+                                span CONCILIACIÓN EXTRAJUDICIAL
+                                br
+                                | Centro de Conciliación
+                                br
+                                | Pontificia Universidad Católica del Perú
+                                br
+                                | Diciembre 2000
+                                br
+                                br
 
+                                span CURSO INTERNACIONAL DE CONCILIACIÓN LABORAL
+                                | IPRECON-USAID
+                                br
+                                | Junio 1999
+                                br
+                                br
+
+                                span RESPONSABILIDAD SOCIAL EN LA INDUSTRIA DEL PETRÓLEO - PETROPERU
+                                br
+                                | Lima Octubre 2005
+                        li
+                            .collapsible-header
+                                i.material-icons library_books
+                                | Información adicional
+                            .collapsible-body               
+                                p Director independiente de sociedades anónimas abiertas, año 2014 a la fecha.    
+                                p Best Lawyers. Reconocimiento como “Lawyer of the year. Criminal Defense” 2014.    
+                                p Club Deportivo Universidad Católica. Mejor deportista rama de triatlón 2003.                            
+                                p Presidente Nacional de Hotelga.
+                                p Instituto de Ciencias Penales. Miembro del Instituto de Ciencias Penales, desde el año 1986 a la fecha.
+                                p Asociacion Internacional de Derecho Penal. Socio de la Sección Chilena, desde el año 1988 a la fecha.
+                                p Colegio de Abogados de Chile A.G. Miembro desde el año 1982 a la fecha.
+            .row                
+                .col.s12.m12
+                    .collection
+                        a.collection-item
+                            span.badge Puno y Guido #452
+                            | Ubicación
+                        #map
 script.
     $('.materialboxed').materialbox();
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTxa8i8ohlgOD_hgIilCdyoXfbY-b-UqI&amp;callback=initMap" async defer></script>
