@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="keywords" content="Registro productos")
+    meta(name="description" content="Registro de productos en el localStorage empleando JSON")
+    link(href="../styles/materialize.css", rel="stylesheet")
+    link(href="../styles/icons.css", rel="stylesheet")
+    title Registro de Productos
+body
+    .container
+        .row
+            .col.s12.l5.lx6
+                .row
+                    .collection
+                        .collection-item.cyan.white-text
+                            b Registro de productos
+                        .collection-item
+                                form.col.s12
+                                    .row
+                                        .input-field
+                                            input.validate(type="text" id="codigo")
+                                            label(for="codigo") Productos
+                                    
+                                    .row
+                                        .input-field
+                                            input.validate(type="text" id="producto")
+                                            label(for="producto") Productos
+                                    .row
+                                        .input-field
+                                            input.validate(type="text" id="cantidad")
+                                            label(for="cantidad") Cantidad
+                                    .row
+                                        .input-field
+                                            input.datepicker(type="date" id="fecha")
+                                            //input(type="text" id="fecha")
+                                            label(for="fecha") Fecha Máxima
+                                    button.btn#btnGuardar Guardar
+                                    button.btn#btnLimpiar Limpiar
+                                    br
+                                    br
+            .col.s12.l7.lx6
+                .row
+                    .collection
+                        .collection-item.cyan.white-text
+                            b Lista de productos
+                        .collection-item
+                            #listarVentas
+                            
+                                
+    script(src="../js/jquery.js")
+    script(src="../js/materialize.min.js")
+    script(src="../js/localStorage.js")
+    
+    script.
+        $('.datepicker').pickadate({
+        selectMonths: true,
+        selectYears: 12
+        });
+    

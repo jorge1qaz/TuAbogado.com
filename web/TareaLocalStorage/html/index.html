@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="keywords" content="Registro productos"/>
+  <meta name="description" content="Registro de productos en el localStorage empleando JSON"/>
+  <link href="../styles/materialize.css" rel="stylesheet"/>
+  <link href="../styles/icons.css" rel="stylesheet"/>
+  <title>Registro de Productos</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l5 lx6">
+        <div class="row">
+          <div class="collection">
+            <div class="collection-item cyan white-text"><b>Registro de productos</b></div>
+            <div class="collection-item">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field">
+                    <input class="validate" type="text" id="codigo"/>
+                    <label for="codigo">Productos</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    <input class="validate" type="text" id="producto"/>
+                    <label for="producto">Productos</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    <input class="validate" type="text" id="cantidad"/>
+                    <label for="cantidad">Cantidad</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    <input class="datepicker" type="date" id="fecha"/>
+                    <!--input(type="text" id="fecha")-->
+                    <label for="fecha">Fecha Máxima</label>
+                  </div>
+                </div>
+                <button class="btn" id="btnGuardar">Guardar</button>
+                <button class="btn" id="btnLimpiar">Limpiar</button><br/><br/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 l7 lx6">
+        <div class="row">
+          <div class="collection">
+            <div class="collection-item cyan white-text"><b>Lista de productos</b></div>
+            <div class="collection-item">
+              <div id="listarVentas"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/materialize.min.js"></script>
+  <script src="../js/localStorage.js"></script>
+  <script>
+    $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 12
+    });
+  </script>
+</body>
