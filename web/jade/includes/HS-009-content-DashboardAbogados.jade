@@ -1,0 +1,142 @@
+link(rel="stylesheet" type="text/css" href="../styles/slick.css")
+link(rel="stylesheet" type="text/css" href="../styles/slick-theme.css")
+.container
+    .row
+        .col.m3.s12
+            .card-panel.teal
+                br
+                br
+                span.white-text Dashboard de Abogado
+                br
+                br
+            
+            section.regular.slider
+                div
+                    img(src="../images/Publicidad/pub1.jpg", alt="imagen de publicidad").responsive-img
+                div
+                    img(src="../images/Publicidad/pub2.jpg", alt="imagen de publicidad").responsive-img
+                div
+                    img(src="../images/Publicidad/pub3.jpg", alt="imagen de publicidad").responsive-img
+                div
+                    img(src="../images/Publicidad/pub4.jpg" alt="imagen de publicidad").responsive-img
+                div
+                    img(src="../images/Publicidad/pub5.jpg", alt="imagen de publicidad").responsive-img
+                div
+                    img(src="../images/Publicidad/pub6.jpg", alt="imagen de publicidad").responsive-img
+                div
+                    img(src="../images/Publicidad/pub7.jpg", alt="imagen de publicidad").responsive-img
+                div
+                    img(src="../images/Publicidad/pub8.jpg" alt="imagen de publicidad").responsive-img
+                div
+                    img(src="../images/Publicidad/pub9.jpg", alt="imagen de publicidad").responsive-img
+        .col.m9.s12
+            .card-panel.blue-grey.lighten-5
+                br
+                br
+                .row
+                    .col.m4.s12#bloqueVista1
+                        .center
+                            .card
+                                .card-content
+                                    img(id="imgOpt1Def" src="../images/opciones/icn-principal-parametria-default.png", alt="")
+                                    img(id="imgOpt1" src="../images/opciones/icn-principal-parametria-hover.png", alt="")
+                                    br
+                                    label.card-title.black-text#lblConf Configuración
+                    .col.m4.s12#bloqueVista2
+                        .center
+                            .card
+                                .card-content
+                                    img(id="imgOpt2Def" src="../images/opciones/icn-principal-default-consultar-visitas.png", alt="")
+                                    img(id="imgOpt2" src="../images/opciones/icn-principal-consultar-visitas-hover.png", alt="")
+                                    br
+                                    label.card-title.black-text Buscar
+                    .col.m4.s12#bloqueVista3
+                        .center
+                            .card
+                                .card-content
+                                    img(id="imgOpt3Def" src="../images/opciones/icn-principal-programar-visita-default.png", alt="")
+                                    img(id="imgOpt3" src="../images/opciones/icn-principal-programar-visita-hover.png", alt="")
+                                    br
+                                    label.card-title.black-text Estadísticas
+                .row
+                    .col.m2.s12
+                    .col.m4.s12#bloqueVista4
+                        .center
+                            .card
+                                .card-content
+                                    img(id="imgOpt4Def" src="../images/opciones/icn-principal-reportes-default.png", alt="")
+                                    img(id="imgOpt4" src="../images/opciones/icn-principal-reportes-hover.png", alt="")
+                                    br
+                                    label.card-title.black-text Agenda
+                    .col.m4.s12#bloqueVista5
+                        .center
+                            .card
+                                .card-content
+                                    img(id="imgOpt5Def" src="../images/opciones/icn-principal-user-default.png", alt="")
+                                    img(id="imgOpt5" src="../images/opciones/icn-principal-user-hover.png", alt="")
+                                    br
+                                    label.card-title.black-text Comunidad
+                .row#bloque1
+                    .col.m12.s12
+                        table
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Editar perfil
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Editar capacidades
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Editar dirección de su despacho
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Modificar el tiempo/cobro de sus consultas
+                .row#bloque2
+                    .col.m12.s12
+                        table
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Ver lista de abogados
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Buscar un problema legal específico
+                .row#bloque3
+                    .col.m12.s12
+                        table
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Ver sus estadísticas por fechas
+                .row#bloque4
+                    .col.m12.s12
+                        table
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Ver los clientes en espera
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Modificar el tiempo/cobro de sus consultas
+                .row#bloque5
+                    .col.m12.s12
+                        table
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Ver los foros
+                            tr
+                                td
+                                    button.btn.btn-large.waves-effect.waves-light.waves-ripple.blue-grey.lighten-1 Agregar una pregunta al foro
+                .row#btnVolverContent
+                    button.btn.right.waves-effect.waves-light.waves-ripple.red#btnVolver Volver
+script(src="../js/propios/dashboarAbo.js")
+script(src="../js/propios/jquery-2.1.1.min.js")
+script(src="../js/propios/slick.min.js" type="text/javascript" charset="utf-8")
+script.
+    $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 250000000,
+      });
+    });

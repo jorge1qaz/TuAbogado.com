@@ -17,9 +17,7 @@
 </html>
 <body>
   <nav>
-    <div class="nav-wrapper blue darken-1 z-depth-4"><a class="brand-logo left" href="../images/Logo.png">
-        _ 
-        TuAbogadoPerú.com</a><a class="button-collapse" href="#" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper light-blue lighten-1 z-depth-4"><a class="brand-logo center" href="../images/Logo.png">TuAbogado.com</a><a class="button-collapse" href="#" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="waves-effect waves-green" href="#">Registre su despacho</a></li>
         <li><a class="waves-effect waves-green" href="./HS-005-ListaDeAbogados.html">Contactar un abogado</a></li>
